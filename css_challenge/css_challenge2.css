@@ -1,22 +1,24 @@
 body{
-	font-family: Andale Mono, monospace;
+	font-family: Optima, Sans-serif;
 	background-color: #f5cca3
 }
 
 h1{
-	font-style: bold;
-	font-size: large;
+	font-weight: 900;
+	font-size: 35px;
 	border-bottom: 4px dashed black;
 	margin-top: 0;
-	height: 30px;
+	overflow: hidden;
 }
 
 h1,p,li{
   color:black;
 }
 
-ul:first-letter{
+li::first-letter{
 	text-transform: capitalize;
+	font-weight: bold;
+	font-size: larger;
 }
 
 p{
@@ -27,9 +29,9 @@ p{
 #wrap{
 	background-color: #FAFAD2;
 	margin: auto;
-    height: 60%;
     width: 60%;
     border: 4px dashed black;
+    overflow: hidden;
 }
 
 h1, ul{
