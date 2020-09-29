@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Challenge8</title>
+  </head>
+  <body>
+    <h1>Challenge 8: An accessible form with style</h1>
+    <form action="mailto:liguiguihua@gmail.com">
+    	<fieldset accesskey="t">
+	        <legend>Purchases</legend>
+	        <p><label for="product_select">Product Name:</label></p>
+	        <p><select id="product_select" name="product">
+	        	<option></option>
+	        	<option value="product1">product1</option>
+	        	<option value="product2">product2</option>
+	        </select></p>
+	        <p><label for="quantity">Quantity:</label></p>
+	        <p><input accesskey="q" type="text" name="quantity" id="quantity"></p>
+    	</fieldset>
+    	<fieldset>
+	        <legend>Personal details</legend>
+	        <p><label for="firstName">First name:</label></p>
+	        <p><input name="firstName" id="firstName"></p>
+	        <p><label for="lastName">Last name:</label></p>
+	        <p><input name="lastName" id="lastName"></p>
+    	</fieldset>
+    	<fieldset>
+    		<legend>Credit Card Details</legend>
+    		<p>Credit Card Type</p>
+    		<p><input type="radio" name="creaditCardType" id="visa" value="visa" ><label for="visa">Visa</label></p>
+    		<p><input type="radio" name="creaditCardType" id="mastercard" value="mastercard"><label for="mastercard">Mastercard</label></p>
+    		<p><label for="creaditCardNum">Credit Card Number:</label></p>
+    		<p><input type="text" name="creaditCardNum" id="creaditCardNum"></p>
+    		<p><label for="expiryDate">Expiry Date:</label></p>
+    		<p><input type="text" name="expiryDate" id="expiryDate"></p>
+    	</fieldset>
+    	<fieldset>
+	        <legend>Billing Information</legend>
+	        <p><label for="postalAddress">Potal Address:</label></p>
+	        <p><input name="postalAddress" id="postalAddress"></p>
+	        <p>
+	        	<label for="homeAddress">Home Address:</label>
+	        	<input type="checkbox" name="sameAbove" id="sameAbove">
+	        	<label for="sameAbove">Same as above</label>
+	        </p>
+	    
+	        <p><input name="homeAddress" id="homeAddress"></p>
+    	</fieldset>
+    	<input type="submit" name="placeOrder" value="Place my order">
+    </form>
+  </body>
+</html>
