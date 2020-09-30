@@ -1,0 +1,46 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: Optima, Sans-serif;
+	background-color: #505095;
+}
+
+#wrap{
+	margin: 0 20%;
+	display: table;
+	width: 60%
+}
+
+#content{
+	text-align: center;
+	background-color: #5a89e3;
+	margin-left: 180px;
+	background-repeat: repeat-y;
+}
+
+#nav{
+	float: left;
+	background-color: #a8ceff;
+	width: 180px;
+}
+
+#nav ul{
+	list-style-position: inside;
+	padding-right: 9px;
+}
+
+#nav h2{
+	text-align: center;
+}
+
+#content ul{
+	list-style-position: inside;
+	list-style: none;
+}
+
+p{
+	margin-left: 30px;
+	margin-right: 30px;
+}
+
+
