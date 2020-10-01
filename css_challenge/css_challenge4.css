@@ -5,67 +5,59 @@ body{
 
 #wrap{
 	margin: 0 auto;
-    width: 80%;
-}
-
-#content{
-	background-color: #8FBC8F;
-	width: 100%;
-	padding-top: 12px;
-	padding-bottom: 72.5%;
-	margin-right: 0px;
-	text-align: center;
-}
-
-#content ul{
-	list-style-type: none;
-	font-size: 16px;
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
-}
-
-#header, #sidebar{
-	background-color: #BDB76B
+    width: 70%;
 }
 
 #header{
+	grid-area: header;
+	background-color: #BDB76B;
 	text-align: right;
-	padding-top: 1px;
-	padding-bottom: 5px;
-	margin-bottom: 0;
-}
-
-#sidebar{
-	text-align: center;
-	float: right;
-	padding-left: 25px;
-	padding-bottom: 100%
-}
-
-#sidebar ul{
-	padding-left: 6px;
-	text-align: center;
-}
-
-#sidebar li a{
-  position: relative;
-  left: -30px;
-}
-
-#sidebar h2{
-	padding-right: 8px;
-	text-align: center;
+	padding-right: 20px;
 }
 
 #nav{
+	grid-area: nav;
 	background-color: #3CB371;
-	margin-top: 0;
-	padding-top: 3px;
-	padding-bottom: 1px;
-	border-bottom: 4px dashed white;
+}
+
+#sidebar{
+	grid-area: sidebar;
+	background-color: #BDB76B;
+}
+
+#content{
+	grid-area: content;
+	background-color: #8FBC8F;
+	text-align: center;
+}
+
+#content p{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#footer{
+	grid-area: footer;
+}
+
+#wrap{
+	display: grid;
+	grid-template-columns: 3fr, 1fr;
+	grid-template-areas: 
+		"header header"
+		"nav nav"
+		"content sidebar"
+		"footer footer"
 }
 
 #nav li{
 	display: inline;
 	list-style-type: none;
 	padding-right: 25px;
+}
+
+#content ul{
+	list-style-type: none;
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
