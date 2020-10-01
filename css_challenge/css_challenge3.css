@@ -5,6 +5,10 @@ body{
 	background-color: #505095;
 }
 
+h1{
+	padding-top: 15px;
+}
+
 #wrap{
 	margin: 0 20%;
 	display: table;
@@ -15,13 +19,14 @@ body{
 	text-align: center;
 	background-color: #5a89e3;
 	margin-left: 180px;
-	background-repeat: repeat-y;
+	height: 420px;
 }
 
 #nav{
 	float: left;
 	background-color: #a8ceff;
 	width: 180px;
+	padding-bottom: 240px;
 }
 
 #nav ul{
