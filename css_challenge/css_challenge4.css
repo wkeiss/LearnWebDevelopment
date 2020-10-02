@@ -43,7 +43,7 @@ body{
 
 #wrap{
 	display: grid;
-	grid-template-columns: 3fr, 1fr;
+	grid-template-columns: 1fr 2fr;
 	grid-template-areas: 
 		"header header"
 		"nav nav"

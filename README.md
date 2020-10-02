@@ -20,7 +20,7 @@ Note: I found some of the study articles they linked in the challenges are out o
 
 - [CSS Colors](https://www.w3schools.com/cssref/css_colors.asp)
 
-- [CSS font-family property](https://www.w3schools.com/cssref/pr_font_font-family.asp)
+- [CSS: fonts](https://www.w3.org/Style/Examples/007/fonts)
 
 ## Changelog:
 

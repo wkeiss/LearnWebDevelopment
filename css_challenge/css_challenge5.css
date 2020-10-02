@@ -4,28 +4,66 @@
 	padding: 0;
 }
 
-blockquote{
-	grid-area: blockquote;
-	font-weight: bolder;
-	font-size: 34px;
+#wrap{
+	margin-right: 30px;
+	margin-left: 30px;
+	width: 90%;
+	font-family: Helvetica, sans-serif;
 }
 
 #logo{
 	grid-area: logo;
 }
 
+blockquote{
+	grid-area: blockquote;
+	font-size: 40px;
+	margin-left: 0;
+	font-style: italic;
+}
+
+#header{
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	grid-template-areas: 
+		"logo blockquote"
+}
+
 #content-side{
 	grid-area: side;
+	font-size: 20px;
 }
 
-#content-main{
+#content-side dl{
+	padding: 15px;
+	width: 75%;
+}
+
+dl dt{
+	font-size: 25px;
+}
+
+dt, dd{
+	margin-bottom: 7px;
+}
+
+#content-main {
 	grid-area: main;
+	font-size: 20px;
 }
 
-#wrap{
+#content{
 	display: grid;
-	grid-auto-columns: 2fr 3fr;
-	grid-template-areas:
-	"logo blockquote" 
-	"side main"
+	grid-template-columns: 2fr 3fr;
+	grid-template-areas: 
+		"side main"
 }
+
+a{
+	color: rgb(212, 198, 131);
+}
+
+#logo h1{
+	visibility: hidden
+}
+
