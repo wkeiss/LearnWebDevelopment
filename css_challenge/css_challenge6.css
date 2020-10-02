@@ -1,0 +1,33 @@
+body{
+	background-image: url("../images/thomas-heintz-0tgMnMIYQ9Y-unsplash.jpg")
+}
+
+#wrap{
+	margin:0 auto;
+	width: 60%;
+}
+
+.posttitle{
+	color: rgb(216, 151, 173);
+	text-align: center;
+	font-size: 56px;
+	font-family: 'Sansita Swashed', cursive;
+}
+
+.dateheader{
+	color: rgb(216, 151, 173);
+	text-align: right;
+	font-size: 45px;
+	font-family: 'Sansita Swashed', cursive;
+}
+
+#content{
+	margin-top: 18px;
+	float: left;
+}
+
+p{
+	font-size: 25px;
+	font-family: Courier New, monospace;
+}
+
