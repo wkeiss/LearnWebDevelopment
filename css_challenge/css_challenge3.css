@@ -5,45 +5,42 @@ body{
 	background-color: #505095;
 }
 
-h1{
-	padding-top: 15px;
-}
-
-#wrap{
-	margin: 0 20%;
-	display: table;
-	width: 60%
-}
-
-#content{
-	text-align: center;
-	background-color: #5a89e3;
-	margin-left: 180px;
-	height: 420px;
-}
-
 #nav{
-	float: left;
+	grid-area: nav;
 	background-color: #a8ceff;
-	width: 180px;
-	padding-bottom: 240px;
-}
-
-#nav ul{
-	list-style-position: inside;
-	padding-right: 9px;
 }
 
 #nav h2{
 	text-align: center;
 }
 
-#content ul{
-	list-style-position: inside;
+
+#content{
+	grid-area: content;
+	background-color: #5a89e3;
+	text-align: center;
+}
+
+#content p{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+#content li{
 	list-style: none;
 }
 
-p{
-	margin-left: 30px;
-	margin-right: 30px;
+#footer{
+	grid-area: footer;
+	text-align: center;
+}
+
+#wrap{
+	margin: 0 auto;
+	width: 55%;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	grid-template-areas: 
+	"nav content"
+	"footer footer"
 }
