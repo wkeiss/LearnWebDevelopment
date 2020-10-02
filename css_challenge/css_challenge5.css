@@ -1,0 +1,31 @@
+#body{
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+blockquote{
+	grid-area: blockquote;
+	font-weight: bolder;
+	font-size: 34px;
+}
+
+#logo{
+	grid-area: logo;
+}
+
+#content-side{
+	grid-area: side;
+}
+
+#content-main{
+	grid-area: main;
+}
+
+#wrap{
+	display: grid;
+	grid-auto-columns: 2fr 3fr;
+	grid-template-areas:
+	"logo blockquote" 
+	"side main"
+}
