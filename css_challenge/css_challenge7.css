@@ -1,0 +1,81 @@
+body{
+	margin: 0;
+}
+
+#logo{
+	grid-area: logo;
+	margin-left: 20px;
+}
+
+#logo img{
+	margin-top: 8px;
+}
+
+#nav{
+	grid-area: nav;
+	text-align: right;
+}
+
+#nav ul{
+	list-style: none;
+}
+
+#nav li{
+	display: inline;
+	padding-left: 23px;
+}
+
+header{
+	width: 80%;
+	padding: 12px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	grid-template-areas: 
+		"logo nav"
+}
+
+#self-intro{
+	margin: 0;
+	height: 1000px;
+	background-image: url("../images/slider.jpg");
+	opacity: 1;
+	border: 1px solid blue;
+}
+
+#self-intro .wrap{
+	border: 1px solid red;
+	width:60%;
+	margin: 20% 20%;
+	text-align: center;
+}
+
+#self-intro .wrap button{
+	height: 50px;
+	width: 130px;
+	margin-top: 30px;
+	background-color: #414141;
+	color: #fff;
+}
+
+#about .content{
+	grid-area: content;
+}
+
+#about .content p{
+	font-size: 16px;
+	color: #727272;
+	padding: 20px;
+}
+
+#about .image{
+	grid-area: image;
+}
+
+#about{
+	margin: 5% 10%;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-areas: 
+		"content image"
+}
