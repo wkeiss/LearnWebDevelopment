@@ -60,12 +60,12 @@ header{
 
 #about .content{
 	grid-area: content;
+	padding: 20px;
 }
 
 #about .content p{
-	font-size: 16px;
+	font-size: 18px;
 	color: #727272;
-	padding: 20px;
 }
 
 #about .image{
@@ -78,4 +78,38 @@ header{
 	grid-template-columns: 3fr 1fr;
 	grid-template-areas: 
 		"content image"
+}
+
+#latestwork .wrap .item1{
+	grid-area: item1;
+	border: 2px solid green;
+}
+
+#latestwork .wrap .item2{
+	grid-area: item2;
+}
+
+#latestwork .item3{
+	grid-area: item3;
+	border: 2px solid green;
+}
+
+#latestwork .item4{
+	grid-area: item4;
+}
+
+#latestwork .item5{
+	grid-area: item5;
+}
+
+#latestwork .item6{
+	grid-area: item6;
+}
+
+#lastestwork .wrap{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 
+		"item1 item2 item3"
+		"item4 item5 item6"
 }
