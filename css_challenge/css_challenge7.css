@@ -79,19 +79,34 @@ header{
 	grid-template-areas: 
 		"content image"
 }
-
-#latestwork .wrap .item1{
-	grid-area: item1;
-	border: 2px solid green;
+#latestwork{
+	background-color: rgb(252, 252, 252);
 }
 
-#latestwork .wrap .item2{
+/* [A Pen by abraham anak agung](https://codepen.io/padunk/pen/QWbLZrG?editors=1100) */
+#latestwork .img-wrap{
+	width: 100%;
+	height: 100%;
+	margin-bottom: 0;
+}
+
+#latestwork img{
+	width: 100%;
+  	height: 100%;
+  	object-fit: cover;
+  	margin-bottom: 0;
+}
+
+#latestwork .item1{
+	grid-area: item1;
+}
+
+#latestwork .item2{
 	grid-area: item2;
 }
 
 #latestwork .item3{
 	grid-area: item3;
-	border: 2px solid green;
 }
 
 #latestwork .item4{
@@ -106,10 +121,38 @@ header{
 	grid-area: item6;
 }
 
-#lastestwork .wrap{
+#latestwork .wrap{
+	padding: 30px;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-areas: 
-		"item1 item2 item3"
-		"item4 item5 item6"
+	grid-gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    	"item1 item2 item3"
+    	"item4 item5 item6";
+}
+
+#latestwork .header{
+	width: 60%;
+	margin: 40px auto;
+	text-align: center;
+}
+#latestwork .header h2{
+	padding-top: 100px;
+	font-size: 30px;
+}
+
+#latestwork .header p{
+	text-align: center;
+	font-size: 18px;
+}
+
+#latestwork .description{
+	background-color: #fff;
+	text-align: center;
+	border: 1px solid #fff;
+	margin: 0;
+}
+
+#latestwork .description h3{
+	color: #02bdd5;
 }

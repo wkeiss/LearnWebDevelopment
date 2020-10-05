@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<style type="text/css">
+		#latestwork .item1 img{
+			grid-area: item1;
+			border: 2px solid green;
+		}
+
+		#latestwork .item2 img{
+			grid-area: item2;
+		}
+
+		#latestwork .item3 img{
+			grid-area: item3;
+			border: 2px solid green;
+		}
+
+		#latestwork .item4 img{
+			grid-area: item4;
+		}
+
+		#latestwork .item5 img{
+			grid-area: item5;
+		}
+
+		#latestwork .item6 img{
+			grid-area: item6;
+		}
+
+		#lastestwork .wrap{
+			display: grid;
+		    grid-template-columns: 1fr 1fr;
+		    grid-template-areas: 
+		    	"item1 item2"
+		    	"item4 item5"
+		}
+	</style>
+</head>
+<body>
+	<div id="latestwork">
+		<div class="wrap">
+			<div class="item1">
+				<img src="../images/portfolio/item-1.jpg">
+			</div>
+			<div class="item2">
+				<img src="../images/portfolio/item-2.jpg">
+			</div>
+			<div class="item3">
+				<img src="../images/portfolio/item-3.jpg">
+			</div>
+			<div class="item4">
+				<img src="../images/portfolio/item-4.jpg">
+				<div class="description">
+					<h3>Make Up elements</h3>
+					<p>Lorem ipsum dolor sit.</p>
+				</div>
+			</div>
+			<div class="item5">
+				<img src="../images/portfolio/item-5.jpg">
+				<div class="description">
+					<h3>Shopping Bag Concept</h3>
+					<p>Lorem ipsum dolor sit.</p>
+				</div>
+			</div>
+			<div class="item6">
+				<img src="../images/portfolio/item-6.jpg">
+				<div class="description">
+					<h3>Caramel Bottle</h3>
+					<p>Lorem ipsum dolor sit.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
