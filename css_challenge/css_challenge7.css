@@ -2,6 +2,10 @@ body{
 	margin: 0;
 }
 
+p{
+	color: #727272;
+}
+
 #logo{
 	grid-area: logo;
 	margin-left: 20px;
@@ -25,6 +29,15 @@ body{
 	padding-left: 23px;
 }
 
+#nav a{
+	text-decoration: none;
+	color: #444; 
+}
+
+#nav a:hover{
+	color: rgb(2, 189, 213);
+}
+
 header{
 	width: 80%;
 	padding: 12px;
@@ -38,17 +51,14 @@ header{
 #self-intro{
 	margin: 0;
 	background: url("../images/slider.jpg") no-repeat 50%;
-	opacity: 0.3;
 	background-size: cover;
     background-attachment: fixed;
     padding: 230px 0;
-    color: #fff;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
     position: relative;
 }
 
 #self-intro .wrap{
-	opacity: 1;
 	width: 60%;
 	margin: 0 20%;
 	text-align: center;
@@ -60,6 +70,10 @@ header{
 	width: 130px;
 	background-color: #414141;
 	color: #fff;
+}
+
+#self-intro button:focus{
+	outline: none;
 }
 
 #about .content{
@@ -214,6 +228,10 @@ header{
 	margin-top: 23px;
 }
 
+#contact .wrap button:focus{
+	outline: none;
+}
+
 footer{
 	height: 20px;
 }
@@ -224,23 +242,26 @@ footer .wrap{
 }
 
 footer .copyright{
-	display: inline-block;
+	padding-top: 0;
+	margin-bottom: 0;
 	font-size: 16px;
+	display: inline-block;
 }
 
 footer .social-media{
-	display: inline-block;
+	margin-bottom: 0;
 	float: right;
+	display: inline-block;
 }
 
 footer .social-media ul{
-	padding-top: 0;
+	margin-top: 0;
 	list-style: none;
 }
 
 footer .social-media li{
 	padding-top: 0;
-	font-size: 20px;
+	font-size: 22px;
 	display: inline;
 	padding-left: 9px;
 }
