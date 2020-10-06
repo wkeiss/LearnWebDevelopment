@@ -37,23 +37,27 @@ header{
 
 #self-intro{
 	margin: 0;
-	height: 1000px;
-	background-image: url("../images/slider.jpg");
-	opacity: 1;
-	border: 1px solid blue;
+	background: url("../images/slider.jpg") no-repeat 50%;
+	opacity: 0.3;
+	background-size: cover;
+    background-attachment: fixed;
+    padding: 230px 0;
+    color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    position: relative;
 }
 
 #self-intro .wrap{
-	border: 1px solid red;
-	width:60%;
-	margin: 20% 20%;
+	opacity: 1;
+	width: 60%;
+	margin: 0 20%;
 	text-align: center;
+	line-height: 27px;
 }
 
 #self-intro .wrap button{
 	height: 50px;
 	width: 130px;
-	margin-top: 30px;
 	background-color: #414141;
 	color: #fff;
 }
@@ -81,52 +85,61 @@ header{
 }
 #latestwork{
 	background-color: rgb(252, 252, 252);
+	margin: 0;
 }
 
 /* [A Pen by abraham anak agung](https://codepen.io/padunk/pen/QWbLZrG?editors=1100) */
 #latestwork .img-wrap{
 	width: 100%;
 	height: 100%;
-	border: 1px solid blue;
+	/*border: 1px solid blue;*/
 	margin-bottom: 0;
 }
 
 #latestwork img{
 	width: 100%;
-  	height: auto;
+  	height: 100%;
   	object-fit: cover;
   	margin: 0;
-  	padding-bottom: 1px;
-  	border: 1px solid red;
+  	padding: 0;
+  	/*border: 1px solid red;*/
 
 }
 
 #latestwork .item1{
 	grid-area: item1;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 #latestwork .item2{
 	grid-area: item2;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 #latestwork .item3{
 	grid-area: item3;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 #latestwork .item4{
 	grid-area: item4;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 #latestwork .item5{
 	grid-area: item5;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 #latestwork .item6{
 	grid-area: item6;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 #latestwork .wrap{
-	padding: 30px;
+	margin-right: 10%;
+	margin-left: 10%;
+	padding: 40px 30px;
 	display: grid;
 	grid-gap: 50px;
     grid-template-columns: 1fr 1fr 1fr;
@@ -152,22 +165,29 @@ header{
 
 #latestwork .description{
 	background-color: #fff;
-	text-align: center;
 	border: 1px solid #fff;
-	margin: 0;
 }
 
 #latestwork .description h3{
 	color: #02bdd5;
+	margin-bottom: 0;
+	margin-left: 20px;
+}
+
+#latestwork .description p{
+	margin-top: 5px;
+	margin-left: 20px;
 }
 
 #contact{
+	margin: 0;
+	border: 1px solid #02bdd5;
 	background-color: #02bdd5;
 }
 
 #contact .wrap{
 	padding: 60px;
-	height: 250px;
+	height: 200px;
 	width: 50%;
 	margin: 50px auto;
 	text-align: center;
@@ -194,21 +214,38 @@ header{
 	margin-top: 23px;
 }
 
+footer{
+	height: 20px;
+}
 footer .wrap{
 	width: 80%;
-	margin: 0 auto;
+	margin: 10px auto;
+	padding: 18px 0;
+}
+
+footer .copyright{
+	display: inline-block;
+	font-size: 16px;
+}
+
+footer .social-media{
+	display: inline-block;
+	float: right;
 }
 
 footer .social-media ul{
-	display: inline-block;
-	float: right;
+	padding-top: 0;
 	list-style: none;
 }
 
 footer .social-media li{
+	padding-top: 0;
+	font-size: 20px;
 	display: inline;
+	padding-left: 9px;
 }
 
 footer a{
 	color: #02bdd5;
+	text-decoration: none;
 }
