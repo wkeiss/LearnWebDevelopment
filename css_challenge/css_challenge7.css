@@ -6,27 +6,25 @@ p{
 	color: #727272;
 }
 
-#logo{
-	grid-area: logo;
-	margin-left: 20px;
+header .wrap{
+	display: flex;
 }
 
-#logo img{
-	margin-top: 8px;
+#logo{
+	align-self: center;
 }
 
 #nav{
-	grid-area: nav;
 	text-align: right;
 }
 
 #nav ul{
-	list-style: none;
+	display: inline-flex;
 }
 
 #nav li{
-	display: inline;
-	padding-left: 23px;
+	padding-left: 25px;
+	list-style: none;
 }
 
 #nav a{
@@ -49,7 +47,7 @@ header .wrap{
 }
 
 header{
-	position: fixed;
+	position: sticky;
 }
 
 #self-intro{
@@ -83,27 +81,16 @@ header{
 	outline: none;
 }
 
-#about .content{
-	grid-area: content;
-	padding: 20px;
-}
-
 #about .content p{
 	font-size: 18px;
 	color: #727272;
 }
 
-#about .image{
-	grid-area: image;
-}
-
 #about{
 	margin: 5% 10%;
-	display: grid;
-	grid-template-columns: 3fr 1fr;
-	grid-template-areas: 
-		"content image"
+	display: flex;
 }
+
 #latestwork{
 	background-color: rgb(252, 252, 252);
 	margin: 0;
