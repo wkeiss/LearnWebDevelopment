@@ -38,7 +38,7 @@ p{
 	color: rgb(2, 189, 213);
 }
 
-header{
+header .wrap{
 	width: 80%;
 	padding: 12px;
 	margin: 0 auto;
@@ -48,6 +48,10 @@ header{
 		"logo nav"
 }
 
+header{
+	position: fixed;
+}
+
 #self-intro{
 	margin: 0;
 	background: url("../images/slider.jpg") no-repeat 50%;
@@ -55,7 +59,6 @@ header{
     background-attachment: fixed;
     padding: 230px 0;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-    position: relative;
 }
 
 #self-intro .wrap{
@@ -63,6 +66,10 @@ header{
 	margin: 0 20%;
 	text-align: center;
 	line-height: 27px;
+}
+
+#self-intro .wrap .occupy{
+	color: #02bdd5;
 }
 
 #self-intro .wrap button{
@@ -122,37 +129,43 @@ header{
 
 #latestwork .item1{
 	grid-area: item1;
+	object-fit: cover;
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 #latestwork .item2{
 	grid-area: item2;
+	object-fit: cover;
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 #latestwork .item3{
 	grid-area: item3;
+	object-fit: cover;
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 #latestwork .item4{
 	grid-area: item4;
+	object-fit: cover;
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 #latestwork .item5{
 	grid-area: item5;
+	object-fit: cover;
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 #latestwork .item6{
 	grid-area: item6;
+	object-fit: cover;
 	box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 #latestwork .wrap{
-	margin-right: 10%;
-	margin-left: 10%;
+	margin-right: 5%;
+	margin-left: 8%;
 	padding: 40px 30px;
 	display: grid;
 	grid-gap: 50px;
