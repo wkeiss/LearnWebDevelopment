@@ -6,10 +6,6 @@ p{
 	color: #727272;
 }
 
-header .wrap{
-	display: flex;
-}
-
 #logo{
 	align-self: center;
 }
@@ -47,7 +43,10 @@ header .wrap{
 }
 
 header{
-	position: sticky;
+	position: fixed;
+	top: 0;
+	background-color: #fff;
+	width: 100%;
 }
 
 #self-intro{
