@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>JS Challenge3</title>
     <script>
-    	function checkForm() {
+    	function checkForm(){
     		var optstraw = document.getElementById("optstraw");
     		var optblue = document.getElementById("optblue");
     		if (optstraw.checked == false && optblue.checked == false){
@@ -16,7 +16,7 @@
     </script>
   </head>
   <body>
-    <form action="">
+    <form action="mailto:me@fakeemail.com" onsubmit="return checkForm()">
       <fieldset>
         <legend>Radio buttons and Check Boxes</legend>
         <p>
@@ -32,7 +32,7 @@
         </p>
       </fieldset>
 
-      <input type="submit" value="Check it out!" onclick="checkForm()">
+      <input type="submit" value="Check it out!">
     </form>
   </body>
 </html>
