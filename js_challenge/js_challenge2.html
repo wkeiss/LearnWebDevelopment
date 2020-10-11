@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript Challenges</title>
+    <style>
+      
+    </style>
+    <script>
+      function setHomeAddress() {
+        if (document.getElementById("homepostalcheck").checked == true){
+          document.getElementById("homeaddress").value = document.getElementById("postaladdress").value;
+          document.getElementById("postaladdress").disabled = true;
+        }else{
+          document.getElementById("postaladdress").disabled = false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+
+        <legend>Billing Information</legend>
+
+        <p>
+          <label>
+            Postal Address:<br>
+          <input name="postaladdress" id="postaladdress"></input>
+          </label>
+        </p>
+        
+        <p>
+          Home Address:<br>
+          <label>
+             <input type="checkbox" name="homepostalcheck" id="homepostalcheck" onclick="setHomeAddress()">
+             Same as above
+          </label>
+          <br>
+          <input name="homeaddress" id="homeaddress"></input>
+        </p>
+
+      </fieldset>
+    </form>
+  </body>
+</html>
