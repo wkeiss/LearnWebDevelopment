@@ -43,6 +43,8 @@ header .wrap{
 }
 
 header{
+	margin-top: 0;
+	margin-bottom: 0;
 	position: fixed;
 	top: 0;
 	background-color: #fff;
@@ -92,23 +94,19 @@ header{
 
 #latestwork{
 	background-color: rgb(252, 252, 252);
-	margin: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	border: 1px solid rgb(252, 252, 252);
 }
 
 /* [A Pen by abraham anak agung](https://codepen.io/padunk/pen/QWbLZrG?editors=1100) */
-#latestwork .img-wrap{
-	width: 100%;
-	height: 100%;
-	/*border: 1px solid blue;*/
-	margin-bottom: 0;
-}
+
 
 #latestwork img{
 	max-width: 100%;
   	max-height: 100%;
   	margin: 0;
   	padding: 0;
-  	overflow: hidden;
   	/*border: 1px solid red;*/
 }
 
@@ -149,7 +147,7 @@ header{
 }
 
 #latestwork .wrap{
-	width: 85%;
+	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 40px;
@@ -161,8 +159,9 @@ header{
     	"item4 item5 item6";
 }
 
-#lastetwork .container{
-	margin-top: 40%;
+#latestwork .container{
+	margin-bottom: 23px;
+
 }
 
 #latestwork .header{
@@ -204,8 +203,7 @@ header{
 
 #contact .wrap{
 	padding: 60px;
-	height: 200px;
-	width: 50%;
+	width: 80%;
 	margin: 50px auto;
 	text-align: center;
 	color: #fff;
@@ -217,6 +215,7 @@ header{
 }
 
 #contact .wrap p{
+	text-align: center;
 	font-size: 18px;
 	color: #fff;
 }
@@ -237,6 +236,8 @@ header{
 
 footer{
 	height: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 footer .wrap{
 	width: 80%;
@@ -248,7 +249,6 @@ footer .copyright{
 	padding-top: 0;
 	margin-bottom: 0;
 	font-size: 16px;
-	display: inline-block;
 }
 
 footer .social-media{
@@ -272,4 +272,67 @@ footer .social-media li{
 footer a{
 	color: #02bdd5;
 	text-decoration: none;
+}
+
+/* responsive desigin css for small screen */
+
+@media only screen and (max-width: 768px) {
+	#nav{
+		display: none;
+	}
+
+	header .wrap{
+		width: 90%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+
+	#nav-mobi{
+		align-self: center;
+	}
+
+	#nav-mobi a.icon {
+		color: #fff;
+		background: black;
+		display: block;
+		text-align: center;
+		padding: 6px 14px;
+		font-size: 20px;
+	}
+
+	#about{
+		display: block;
+	}
+
+	#about img{
+		max-height: 100%;
+		max-width: 100%;
+	}
+
+	#latestwork .wrap{
+		display: block;
+	}
+
+	#latestwork .item{
+		margin-bottom: 40px;
+	}
+
+	footer .copyright{
+		text-align: center;
+
+	}
+
+	footer .social-media{
+		text-align: center;
+		float: none;
+		display: block;
+	}
+
+}
+
+@media only screen and (min-width: 768px){
+	#nav-mobi{
+		display: none;
+	}
 }
