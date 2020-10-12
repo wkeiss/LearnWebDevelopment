@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>JS Challenge5</title>
+  </head>
+  <style>
+  	.errormsg{
+  		color: red;
+  		display: none;
+  	}
+  </style>
+  <script>
+  	function checkForm() {
+      //task1: decide the quantity has input and the input should be number, if not, show error massage to educate the user input number
+  		if (document.getElementById("quantity").value == "" || isNaN(document.getElementById("quantity").value) == true){
+        document.getElementById("quntityerrormsg").style.display = "inline";
+        
+      }else{
+        document.getElementById("quntityerrormsg").style.display = "none";
+      
+      };
+
+      //task2: decide the postcode has input and the input should be number, if not, show the error massge to educate the user to input postcode
+
+      if(document.getElementById("postcode").value == "" || isNaN(document.getElementById("postcode").value) == true || document.getElementById("postcode").value.length != 4){
+        document.getElementById("postcodeerrormsg").style.display = "inline";
+        
+      }else{
+        document.getElementById("postcodeerrormsg").style.display = "none";
+      };
+
+      //taks3: decide whether the form whether can be submitted or not, if all fileds has the right fomat content, then the form can be submiited.
+
+      if(document.getElementById("quantity").value == "" || isNaN(document.getElementById("quantity").value) == true || document.getElementById("postcode").value == "" || isNaN(document.getElementById("postcode").value) == true || document.getElementById("postcode").value.length != 4){
+        return false
+      }else{
+        return true
+      }
+
+  		
+  	}
+  </script>
+  <body>
+  	<form action="mailto:me@fakeemail.com" onsubmit="return checkForm();">
+  	  <fieldset>
+
+  	    <legend>Order details</legend>
+  	    <p>
+  	      <label>
+  	        How many orange(s) you'd like to add:
+  	        <input type="text" name="quantity" id="quantity">
+  	      </label>
+  	    </p>
+  	    <p class="errormsg" id="quntityerrormsg">Please enter the amount of the oranges above(like 1, 2, 3, 4....)</p>
+        <p>
+          <label>
+            Postcode:
+            <input type="text" name="postcode" id="postcode">
+          </label>
+        </p>
+        <p class="errormsg" id="postcodeerrormsg">Please enter postcode above(like 0000, it should be only contain 4 charaters)</p>
+  	  </fieldset>
+  	  <input type="submit" value="Submit it!"> 
+  	</form>
+    
+  </body>
+</html>
