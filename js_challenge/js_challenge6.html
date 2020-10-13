@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JavaScript Challenges6</title>
+    <script>
+
+      function checkForm() {
+        // create a variable to reference your email field (saves typing later!)
+        var email = document.getElementById("email");
+
+        // First, create a variable to remember the position of the "@" symbol
+        var atPos = email.value.indexOf("@");
+
+        if (atPos == -1) // you need to replace the question marks with 
+        {
+          // Then there wasn't any @ symbol within the email address!
+          // Let the user know that they need to correct the error!
+          // Add your code below:
+          window.alert("Please input the email address contains '@' charater")
+
+          // Lastly, return false so that the form won't be submitted.
+          return false;
+        }
+
+        var indexAt = email.value.indexOf("@");
+
+        var indexSto = email.value.lastIndexOf(".");
+
+        var res = email.value.substr(indexSto)
+
+        if( indexAt == 0 || indexAt > indexSto || res.length < 3){
+          window.alert("Please make sure you input the right email.");
+          return false; 
+        }
+
+      }
+    </script>
+  </head>
+  <body>
+    <form action="mailto:me@fakeemail.com" onsubmit="return checkForm()">
+      <fieldset>
+
+        <legend>Email subscriptions</legend>
+
+        <p id="emailpara">
+          <label>
+            Email Address: 
+            <input type="text" name="email" id="email">
+          </label>
+        </p>
+
+        <noscript>
+          <p id="emailpara-noscript">
+            <label>
+              Email Address: 
+              <input type="text" name="email" id="email">
+            </label>
+          </p>
+        </noscript>
+      </fieldset>
+      <input type="submit" value="Submit it!"> 
+    </form>
+  </body>
+</html>
