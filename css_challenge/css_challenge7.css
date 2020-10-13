@@ -10,19 +10,6 @@ p{
 	align-self: center;
 }
 
-#nav{
-	text-align: right;
-}
-
-#nav ul{
-	display: inline-flex;
-}
-
-#nav li{
-	padding-left: 25px;
-	list-style: none;
-}
-
 #nav a{
 	text-decoration: none;
 	color: #444; 
@@ -30,16 +17,6 @@ p{
 
 #nav a:hover{
 	color: rgb(2, 189, 213);
-}
-
-header .wrap{
-	width: 80%;
-	padding: 12px;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 2fr 3fr;
-	grid-template-areas: 
-		"logo nav"
 }
 
 header{
@@ -276,19 +253,17 @@ footer a{
 
 /* responsive desigin css for small screen */
 
-@media only screen and (max-width: 768px) {
-	#nav{
-		display: none;
-	}
-
+@media only screen and (max-width: 600px) {	
 	header .wrap{
-		width: 90%;
+		height: 80px;
 		display: flex;
 		justify-content: space-between;
 	}
 
 
 	#nav-mobi{
+		margin-right: 18px;
+		text-align: center;
 		align-self: center;
 	}
 
@@ -299,6 +274,28 @@ footer a{
 		text-align: center;
 		padding: 6px 14px;
 		font-size: 20px;
+	}
+
+	#nav{
+		display: block;
+		align-self: center;
+		position:  absolute;
+		background-color: black;
+		width: 100%;
+		top: 80px;
+	}
+
+	#nav a{
+		color: #fff;
+	}
+
+	#nav ul{
+		color: #fff;
+	}
+
+	#nav li{
+		list-style: none;
+		padding-bottom: 20px;
 	}
 
 	#about{
@@ -331,8 +328,31 @@ footer a{
 
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 600px){
+
+	header .wrap{
+		width: 80%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		height: 80px;
+	}
+
 	#nav-mobi{
 		display: none;
 	}
+
+	#nav{
+		align-self: center;
+	}
+
+	#nav ul{
+		display: inline-flex;
+	}
+
+	#nav li{
+		padding-left: 25px;
+		list-style: none;
+	}
+
 }
