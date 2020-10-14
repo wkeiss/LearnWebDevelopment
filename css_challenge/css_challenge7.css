@@ -1,5 +1,6 @@
 body{
 	margin: 0;
+	width: 100%;
 }
 
 p{
@@ -12,7 +13,6 @@ p{
 
 #nav a{
 	text-decoration: none;
-	color: #444; 
 }
 
 #nav a:hover{
@@ -255,7 +255,7 @@ footer a{
 
 @media only screen and (max-width: 600px) {	
 	header .wrap{
-		height: 80px;
+		height: 100px;
 		display: flex;
 		justify-content: space-between;
 	}
@@ -276,24 +276,28 @@ footer a{
 		font-size: 20px;
 	}
 
-	#nav{
+	.topnav{
+		display: none;
+	}
+
+	.topnav.responsive{
 		display: block;
 		align-self: center;
 		position:  absolute;
 		background-color: black;
 		width: 100%;
-		top: 80px;
+		top: 100px;
 	}
 
-	#nav a{
+	.topnav.responsive a{
 		color: #fff;
 	}
 
-	#nav ul{
+	.topnav.responsive ul{
 		color: #fff;
 	}
 
-	#nav li{
+	.topnav.responsive li{
 		list-style: none;
 		padding-bottom: 20px;
 	}
@@ -335,24 +339,35 @@ footer a{
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
-		height: 80px;
+		height: 100px;
 	}
 
-	#nav-mobi{
+	.topnav #nav-mobi{
 		display: none;
 	}
 
-	#nav{
+	.topnav{
+		display: block;
 		align-self: center;
 	}
 
-	#nav ul{
+	.topnav a{
+		color: #444; 
+	}
+
+
+	.topnav ul{
 		display: inline-flex;
 	}
 
-	#nav li{
+	.topnav li{
 		padding-left: 25px;
 		list-style: none;
 	}
 
-}
+	#nav-mobi{
+    	display: none;
+	}
+
+} 
+

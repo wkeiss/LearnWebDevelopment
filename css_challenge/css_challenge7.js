@@ -1,8 +1,8 @@
 function mobiNav() {
-	var nav = document.getElementById("nav");
-	if (nav.style.disply === "block"){
-		nav.style.disply = "none";
+	var nav = document.getElementById('nav');
+	if (nav.className === 'topnav') {
+		nav.className += ' responsive';
 	}else{
-		nav.style.disply = "block"
+		nav.className = "topnav"
 	}
 }
