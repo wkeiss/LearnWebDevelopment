@@ -1,6 +1,6 @@
 body{
 	margin: 0;
-	width: 100%;
+	width: 100vW;
 }
 
 p{
@@ -22,10 +22,10 @@ p{
 header{
 	margin-top: 0;
 	margin-bottom: 0;
-	position: fixed;
+	position: sticky;
 	top: 0;
 	background-color: #fff;
-	width: 100%;
+	width: 100vW;
 }
 
 #self-intro{
@@ -38,8 +38,8 @@ header{
 }
 
 #self-intro .wrap{
-	width: 60%;
-	margin: 0 20%;
+	width: 60vw;
+	margin: 0 20vw;
 	text-align: center;
 	line-height: 27px;
 }
@@ -65,7 +65,7 @@ header{
 }
 
 #about{
-	margin: 5% 10%;
+	margin: 5vw 10vw;
 	display: flex;
 }
 
@@ -124,7 +124,7 @@ header{
 }
 
 #latestwork .wrap{
-	width: 80%;
+	width: 80vw;
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 40px;
@@ -142,7 +142,7 @@ header{
 }
 
 #latestwork .header{
-	width: 60%;
+	width: 60vw;
 	margin: 40px auto;
 	text-align: center;
 }
@@ -174,13 +174,13 @@ header{
 
 #contact{
 	margin: 0;
+	width: 100vw;
 	border: 1px solid #02bdd5;
 	background-color: #02bdd5;
 }
 
 #contact .wrap{
 	padding: 60px;
-	width: 80%;
 	margin: 50px auto;
 	text-align: center;
 	color: #fff;
@@ -217,14 +217,13 @@ footer{
 	margin-bottom: 0;
 }
 footer .wrap{
-	width: 80%;
+	width: 80vw;
 	margin: 10px auto;
 	padding: 18px 0;
 }
 
 footer .copyright{
 	padding-top: 0;
-	margin-bottom: 0;
 	font-size: 16px;
 }
 
@@ -253,8 +252,10 @@ footer a{
 
 /* responsive desigin css for small screen */
 
-@media only screen and (max-width: 600px) {	
+@media only screen and (max-width: 768px) {	
 	header .wrap{
+		margin: 0 auto;
+		width: 90vw;
 		height: 100px;
 		display: flex;
 		justify-content: space-between;
@@ -285,7 +286,7 @@ footer a{
 		align-self: center;
 		position:  absolute;
 		background-color: black;
-		width: 100%;
+		width: 100vw;
 		top: 100px;
 	}
 
@@ -324,7 +325,14 @@ footer a{
 
 	}
 
+	footer .copyright a{
+		display: block;
+		margin-top: 12px;
+
+	}
+
 	footer .social-media{
+		padding-right: 20px;
 		text-align: center;
 		float: none;
 		display: block;
@@ -332,10 +340,10 @@ footer a{
 
 }
 
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 768px){
 
 	header .wrap{
-		width: 80%;
+		width: 80vw;
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-between;
@@ -368,6 +376,8 @@ footer a{
 	#nav-mobi{
     	display: none;
 	}
+
+}
 
 } 
 
