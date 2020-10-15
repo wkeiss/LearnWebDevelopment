@@ -8,6 +8,12 @@ I started by doing the [HTML](https://en.wikiversity.org/wiki/Web_Design/HTML_Ch
 
 Note: I found some of the study articles they linked in the challenges are out of date, but the challenges are still pretty good to help us learn knowledge from projects. So I suggest when you stuck in the tasks, you'd better search online to learn the latest technology. The [MDN Web Docs](https://developer.mozilla.org/en-US/) is a good resouce.
 
+## Contributing guidelines
+
+- You can study with me from Start part -- doing the HTML, CSS and Javascript challenges.
+
+- Welcome to open issues to discuss study problems you meet.
+
 ## Reference Resource
 
 - [Web Design/HTML Challenges - Wikiversity](https://en.wikiversity.org/wiki/Web_Design/HTML_Challenges)
