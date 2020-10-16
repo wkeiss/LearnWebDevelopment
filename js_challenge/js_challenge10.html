@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+  <head>
+    <title>Javascript challenge 10</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+      // Set up some code to be run when the document is ready:
+      $(document).ready(function(){
+
+        // First, hide the whole email para straight away:
+        $("p#emailpara").hide();
+
+        // Then add a function that should be run each time the subscribe
+        // checkbox is clicked:
+        $("input#subscribe").click(function(){
+          if($("input#subscribe").prop("checked")){$("p#emailpara").show("slow");}else{
+            $("p#emailpara").hide();
+          }
+        });
+      });
+    </script>
+
+  </head>
+  <body>
+    <h1>Testing jQuery</h1>
+    <form action="mailto:me@example.com" method="post">
+      <fieldset>
+        <legend>Email subscriptions</legend>
+
+        <p id="subscribepara">
+          <label>
+            <input type="checkbox" name="subscribe" id="subscribe">
+            Yes! I would like to receive the occasional newsletter via email
+          </label>
+        </p>
+
+        <p id="emailpara">
+          <label>
+            Email Address:
+            <input type="text" name="email" id="email">
+          </label>
+        </p>
+
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -8,9 +8,8 @@ I started by doing the [HTML](https://en.wikiversity.org/wiki/Web_Design/HTML_Ch
 
 Note: I found some of the study articles they linked in the challenges are out of date, but the challenges are still pretty good to help us learn knowledge from projects. So I suggest when you stuck in the tasks, you'd better search online to learn the latest technology. The [MDN Web Docs](https://developer.mozilla.org/en-US/) is a good resouce.
 
-- The [JavaScript Challenge_7:_Unobtrusive_Javascript](https://en.wikiversity.org/wiki/Web_Design/JavaScript_Challenges#Challenge_7:_Unobtrusive_Javascript) is about how to add javascript to HTML file, the related meterial [JavaScript Where To](https://www.w3schools.com/js/js_whereto.asp) is more advanced with times.
-
 - The [JavaScript Challenge 9:_An_intro_to_YUI_-_A_Calendar_Control](https://en.wikiversity.org/wiki/Web_Design/JavaScript_Challenges#Challenge_9:_An_intro_to_YUI_-_A_Calendar_Control) is out of date, the YUI libary is not active now. so you can skip this one. And you can the date picker in this challenge refer to through html input type ' date' . For details, you can check [<input type="date"> - HTML: HyperText Markup Language | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date)
+
 
 ## Contributing guidelines
 
