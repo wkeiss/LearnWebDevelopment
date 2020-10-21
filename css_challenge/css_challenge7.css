@@ -1,10 +1,11 @@
 body{
 	margin: 0;
 	width: 100vW;
+	font-family: Roboto, sans-serif;
 }
 
 p{
-	color: #727272;
+	color: rgb(114, 114, 114);
 }
 
 #logo{
@@ -60,8 +61,9 @@ header{
 }
 
 #about .content p{
-	font-size: 18px;
-	color: #727272;
+	font-size: 16px;
+	line-height: 25px;
+	width: 80%;
 }
 
 #about{
@@ -283,11 +285,14 @@ footer a{
 
 	.topnav.responsive{
 		display: block;
+		border: 1px solid red;
 		align-self: center;
 		position:  absolute;
 		background-color: black;
 		width: 100vw;
 		top: 100px;
+		left: 0;
+		right: 0;
 	}
 
 	.topnav.responsive a{
@@ -296,6 +301,8 @@ footer a{
 
 	.topnav.responsive ul{
 		color: #fff;
+		margin-left: 0;
+		padding-left: 15px;
 	}
 
 	.topnav.responsive li{

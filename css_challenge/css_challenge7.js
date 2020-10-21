@@ -6,3 +6,7 @@ function mobiNav() {
 		nav.className = "topnav"
 	}
 }
+
+navIcon = document.getElementById('nav-icon')
+
+navIcon.onclick = mobiNav
