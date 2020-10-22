@@ -6,6 +6,8 @@ body{
 
 p{
 	color: rgb(114, 114, 114);
+	font-weight: 300;
+
 }
 
 #logo{
@@ -63,12 +65,11 @@ header{
 #about .content p{
 	font-size: 16px;
 	line-height: 25px;
-	width: 80%;
 }
 
 #about{
-	margin: 5vw 10vw;
 	display: flex;
+	margin: 5vw 10vw;
 }
 
 #latestwork{
@@ -285,7 +286,6 @@ footer a{
 
 	.topnav.responsive{
 		display: block;
-		border: 1px solid red;
 		align-self: center;
 		position:  absolute;
 		background-color: black;
