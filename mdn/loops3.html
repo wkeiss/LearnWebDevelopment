@@ -41,19 +41,30 @@
 
 
     // Add your code here
-    do{
+    /* for loop
+
+    for(i; i > 1; i--){
       if(isPrime(i) === false){
-        i--;
         continue;
   
       }else{
         para.textContent += i + ' ';      
       }
+        
+    }
+    */
+
+    do{
+      if(isPrime(i)){
+        para.textContent += i + ' ';
+      }else{
+        i--;
+        continue;     
+      }
       
       i--;
         
     }while(i > 1)
-
 
 
     // Don't edit the code below here!

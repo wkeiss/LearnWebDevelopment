@@ -44,9 +44,21 @@
     // Add your code here
     while(i < phonebook.length){
       if(name === phonebook[i].name){
-        para.innerHTML = `Name: ${phonebook[i].name}, Number: ${phonebook[i].number}`;
+        para.textContent = `Name: ${phonebook[i].name}, Number: ${phonebook[i].number}`;
         break;} else {i ++}
     }
+
+    /* Do...While loop
+
+    do{
+      if(name === phonebook[i].name){
+        para.textContent = `Name: ${phonebook[i].name}, Number: ${phonebook[i].number}`;
+        break;} else {i ++}
+    }while(i < phonebook.length)
+
+    */
+
+
 
     // Don't edit the code below here!
     let section = document.querySelector('section');
