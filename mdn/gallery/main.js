@@ -9,16 +9,11 @@ for(let i = 1; i < 6; i++){
 	let path = `images/pic${i}.jpg`;
 	let newImage = document.createElement('img');
 	newImage.setAttribute('src', path);
-	thumbBar.appendChild(newImage);
-}
-
-const images = document.querySelectorAll('.thumb-bar img');
-
-for(let i = 0; i < images.length; i++){
-	images[i].addEventListener('click', display);
+	newImage.addEventListener('click', display);
 	function display(){
-	displayedImage.src = images[i].src;
+		displayedImage.src = path;
 	}
+	thumbBar.appendChild(newImage);
 }
 
 /* Wiring up the Darken/Lighten button */
@@ -26,9 +21,11 @@ btn.addEventListener('click', changeMode);
 function changeMode(){
 	if (btn.textContent === 'Darken') {
 		btn.textContent = 'Lighten';
-		overlay.style['background-color'] = 'rgba(0,0,0,0.5)';
+		btn.setAttribute('class', 'light');
+		overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
 	} else {
 		btn.textContent = 'Darken';
-		overlay.style['background-color'] = 'rgba(0,0,0,0)';
+		btn.setAttribute('class', 'dark');
+		overlay.style.backgroundColor = 'rgba(0,0,0,0)';
 	}
 }
