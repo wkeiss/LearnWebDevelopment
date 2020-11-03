@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Object basics: Task 2</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+
+    // Add your code here
+    let band = {
+      name:'刺猬',
+      nationality: '中国',
+      genre: '摇滚',
+      members: 3,
+      formed: 2005,
+      split: false,
+      albums:[{released: 2006, name: '快乐的懒孩子'},
+              {released: 2007, name: '噪音袭击世界'},
+              {released: 2009, name: '白日梦蓝'}
+              ]
+    }
+
+    let bandInfo = `${band.name}是一支${band.genre}乐队， 成立于${band.formed}。 该乐队有 ${band.members} 名成员，分别是吉他手兼主唱子健，鼓手石路，贝斯手何一帆。他们在 ${band.albums[0].released}发布了第一张专辑${band.albums[0].name}。`;
+
+
+    // Don't edit the code below here!
+
+    const section = document.querySelector('section');
+    let para1 = document.createElement('p');
+    para1.textContent = bandInfo;
+    section.appendChild(para1);
+  </script>
+
+</html>
