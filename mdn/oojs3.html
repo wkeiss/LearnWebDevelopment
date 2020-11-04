@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>OOJS: Task 3</title>
+    <style>
+      p {
+        color: purple;
+        margin: 0.5em 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+    </style>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+
+  <body>
+
+    <section class="preview">
+
+
+
+    </section>
+
+  </body>
+  <script>
+    function Shape(name, sides, sideLength) {
+      this.name = name;
+      this.sides = sides;
+      this.sideLength = sideLength;
+    }
+
+    Shape.prototype.calcPerimeter = function() {
+        console.log(this.sides * this.sideLength);
+    }
+
+    function Square(sideLength){
+      Shape.call(this, 'square', 4, sideLength);
+    }
+
+    Square.prototype = Object.create(Shape.prototype);
+    Object.defineProperty(Square.prototype, 'constructor', { 
+    value: Square, 
+    enumerable: false, // so that it does not appear in 'for in' loop
+    writable: true });
+
+    Square.prototype.calArea = function(){
+      console.log(this.sideLength ** 2)
+    }
+
+    let square = new Square(6);
+    square.calArea();
+    square.calcPerimeter();
+
+
+
+
+  </script>
+
+</html>
