@@ -26,29 +26,26 @@
 
   </body>
   <script>
-    function Shape(name, sides, sideLength) {
-      this.name = name;
-      this.sides = sides;
-      this.sideLength = sideLength;
+    class Shape{
+      constructor(name, sides, sideLength){
+        this.name = name;
+        this.sides = sides;
+        this.sideLength = sideLength;
+        }
+      calcPerimeter(){
+          console.log(this.sides * this.sideLength);
+      }
     }
 
-    Shape.prototype.calcPerimeter = function() {
-        console.log(this.sides * this.sideLength);
+    class Square extends Shape{
+      constructor(sideLength){
+        super('square', 4, sideLength);
+      }
+      calArea = function(){
+        console.log(this.sideLength ** 2)
+      }
     }
 
-    function Square(sideLength){
-      Shape.call(this, 'square', 4, sideLength);
-    }
-
-    Square.prototype = Object.create(Shape.prototype);
-    Object.defineProperty(Square.prototype, 'constructor', { 
-    value: Square, 
-    enumerable: false, // so that it does not appear in 'for in' loop
-    writable: true });
-
-    Square.prototype.calArea = function(){
-      console.log(this.sideLength ** 2)
-    }
 
     let square = new Square(6);
     square.calArea();
