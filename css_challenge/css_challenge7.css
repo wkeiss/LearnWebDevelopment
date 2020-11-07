@@ -2,7 +2,7 @@ body{
 	margin: 0;
 	padding: 0;
 	font-family: Roboto, sans-serif;
-	width: 100vw;
+	width: 100%;
 }
 
 p{
@@ -65,7 +65,7 @@ header{
 #about .wrap{
 	width: 80%;
 	display: flex;
-	margin: 5vw 10vw;
+	margin: 10% 10%;
 }
 
 #about .content p{
@@ -317,7 +317,11 @@ footer a{
 		padding-bottom: 20px;
 	}
 
-	#about{
+	#self-intro {
+		padding: 140px 0;
+	}
+
+	#about .wrap{
 		display: block;
 	}
 
