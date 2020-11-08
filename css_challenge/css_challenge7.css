@@ -8,7 +8,6 @@ body{
 p{
 	color: rgb(114, 114, 114);
 	font-weight: 300;
-
 }
 
 #logo{
@@ -27,13 +26,15 @@ header{
 	margin-top: 0;
 	margin-bottom: 0;
 	position: sticky;
+	z-index: 1;
 	top: 0;
 	background-color: #fff;
 }
 
 #self-intro{
 	margin: 0;
-	background: url("../images/slider.jpg") no-repeat 50%;
+	/* refer to https://www.w3schools.com/howto/howto_css_hero_image.asp */
+	background-image:linear-gradient(rgba(235, 235, 235, 0.78), rgba(235, 235, 235, 0.78)), url("../images/slider.jpg");
 	background-size: cover;
     background-attachment: fixed;
     padding: 230px 0;
@@ -146,6 +147,43 @@ header{
     	"item4 item5 item6";
 }
 
+.img-wrap{
+	position: relative;
+	z-index: 0;
+}
+
+.item div.overlay{
+	background: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	display: none;
+	justify-content: center;
+	align-items: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;  
+}
+
+.item img:hover + div.overlay{
+	display: flex;
+
+}
+
+#latestwork .overlay button{
+    line-height: 1;
+    border: 1px solid #fff;
+    padding: 10px 23px;
+    color: #fff;
+    margin: 4px;
+    background-color: transparent;
+    
+}
+
+#latestwork a{
+	text-decoration: none;
+	color: #fff;
+}
+
 #latestwork .container{
 	margin-bottom: 23px;
 
@@ -216,7 +254,7 @@ header{
 	margin-top: 23px;
 }
 
-#contact .wrap button:focus{
+button:focus{
 	outline: none;
 }
 
@@ -257,6 +295,63 @@ footer .social-media li{
 footer a{
 	color: #02bdd5;
 	text-decoration: none;
+}
+
+.slideshow-container {
+	position: relative;
+	z-index: 2;
+	width: 100vw;
+	top: 0;
+	border: 1px solid red;
+	background: rgba(0, 0, 0, 0.8);
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: absolute;
+  width: 50%;
+  margin: auto;
+}
+
+.mySlides img{
+	width: 100%;
+  	margin: 0;
+  	padding: 0;
+  	border: 1px solid blue;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	border-radius: 3px 0 0 3px;
+	right: 25%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 /* responsive desigin css for small screen */
