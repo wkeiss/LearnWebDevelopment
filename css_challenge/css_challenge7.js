@@ -54,7 +54,7 @@ demoLinks.forEach(
     element.addEventListener("click", function(e){
       e.preventDefault(); 
       slideshowContainer.style.display = "block";
-      //make the iamge slides show the clicked item's image
+      //make the iamge slide currently show the clicked item's image
       slideImg.src = e.target.href;
     })
   })
@@ -64,24 +64,36 @@ demoLinks.forEach(
 let nextBtn = document.querySelector(".next");
 let prevBtn = document.querySelector(".prev");
 let items = ["item-1", "item-2", "item-3", "item-4", "item-5", "item-6"]
-function showslideImg(i){
-  if(i < 0){
-    slideImg.src = `../images/portfolio/item-${items.length-1}.jpg`
-  }else if(i > (items.length + 1)){
-    slideImg.src = `../images/portfolio/${items[0]}.jpg`
-  }
-  slideImg.src = `../images/portfolio/item-${i}.jpg`
-}
 
+//next/previous controls change the item index in the sideImg's src
+// click the next control, the current item index plus 1
 nextBtn.addEventListener("click", function(){
-  i += 1;
-  showslideImg(i);
+  imgIndex = Number(slideImg.src[slideImg.src.indexOf("-") + 1]);
+  imgIndex += 1;
+  showslideImg(imgIndex);
 });
 
+//next/previous controls change the item index in the sideImg's src
+// click the previous control, the current item index minus 1
 prevBtn.addEventListener("click", function(){
-  i -= 1;
-  showslideImg(i);
+  imgIndex = Number(slideImg.src[slideImg.src.indexOf("-") + 1]);
+  imgIndex -= 1;
+  showslideImg(imgIndex);
 });
+
+//imgIndex always plus or minus, the imgIndex will be beyond the images index range:(1-6). 
+//so use if else statement to control the image index
+//make the slideImg shows the first item(item-1) when the user click the next button on the last item(item-6)
+//make the slideImg shows the last item(item-6) when the user click the previous button on the 1st item(item-1)
+function showslideImg(i){
+  if(i <= 0){
+    slideImg.src = `../images/portfolio/item-${items.length}.jpg`;
+  }else if(i > items.length){
+    slideImg.src = `../images/portfolio/${items[0]}.jpg`;
+  }else{
+    slideImg.src = `../images/portfolio/item-${i}.jpg`;
+  }
+}
 
 // Get the <span> element that closes the modal
 let closeBtns = document.querySelectorAll(".close");
