@@ -4,19 +4,25 @@
 	<title>Lonely Island</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://kit.fontawesome.com/f002.js"></script>
 </head>
 <body>
-	<header>
-		<h1>Lonely Island</h1>
-		<div id="search"><i class="fas fa-search"></i></div>
+	<header id="top">
+		<div class="logo">
+			<h1>Lonely Island</h1>
+		</div>
+		
+		<div class="searchArea">
+			<i class="fa fa-search"></i>
+			<input type="search" name="searchValue">
+			
+		</div>
 	</header>
 
 	<div id="main">
 
 		<section id="textarea">
-			<textarea id="input"></textarea>
-			<button id="postBtn">Submit</button>
+			<textarea id="input" required></textarea>
+			<button type="submit" id="postBtn">Submit</button>
 		</section>
 		
 		
@@ -38,6 +44,7 @@
 			</div>
 		</section>
 	</div>
+	<footer><a href="#textarea"><i class="fa fa-arrow-up"></i></a></footer>
 	<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
