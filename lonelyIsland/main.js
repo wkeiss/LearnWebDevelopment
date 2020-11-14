@@ -19,13 +19,13 @@ postBtn.addEventListener("click", function(){
 	itemDiv.setAttribute("class", "item");
 	let postSection = document.querySelector("#post");
 	postSection.prepend(itemDiv);
-	let para = document.createElement("p");
+	let para = document.createElement("pre");
 	para.setAttribute("class", "content");
 	itemDiv.appendChild(para);
 	para.textContent = content;
 	let today = new Date(); //refer to https://phoenixnap.com/kb/how-to-get-the-current-date-and-time-javascript
 	let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate()+ ' ' + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-	let span = document.createElement("p");
+	let span = document.createElement("pre");
 	span.setAttribute("class", "date");
 	itemDiv.appendChild(span);
 	span.textContent = date;
