@@ -15,6 +15,22 @@ fetch('products.json').then(function(response) {
   }
 });
 
+//use XMLHttpRequest to  retrieve it 
+/*
+let request = new XMLHttpRequest();
+request.open('GET', 'products.json');
+request.responseType = 'json';
+request.onload = function(){
+  if(request.status === 200) {
+    let procucts = request.response;
+    initialize(products);
+    } else {
+    console.log('Network request for products.json failed with response ' + request.status + ': ' + request.statusText);
+  }
+};
+
+request.send();
+*/
 // sets up the app logic, declares required variables, contains all the other functions
 function initialize() {
   // grab the UI elements that we need to manipulate
@@ -161,6 +177,22 @@ function initialize() {
         console.log('Network request for "' + product.name + '" image failed with response ' + response.status + ': ' + response.statusText);
       }
     });
+
+    //use XMLhttp to convert fetch
+    /*
+    let request = new XMLHttpRequest();
+    request.open('GET', url);
+    request.responseType = 'blob';
+    request.onload = function(){
+      if(request.status === 200){
+        let blob = request.response;
+        let objectURL = URL.createObjectURL(blob);
+        showProduct(objectURL, product);
+      }else{
+        console.log('Network request for "' + product.name + '" image failed with response ' + request.status + ': ' + request.statusText);
+      }
+    }
+    request.send();*/
   }
 
   // Display a product inside the <main> element

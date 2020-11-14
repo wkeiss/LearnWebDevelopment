@@ -12,7 +12,7 @@ textInput.addEventListener("keydown", function (e) {
 
 
 let postBtn = document.querySelector("#postBtn");
-postBtn.addEventListener("click", function(){
+/*postBtn.addEventListener("click", function(){
 	content = textInput.value;
 	textInput.value = "";
 	let itemDiv = document.createElement("div");
@@ -29,4 +29,28 @@ postBtn.addEventListener("click", function(){
 	span.setAttribute("class", "date");
 	itemDiv.appendChild(span);
 	span.textContent = date;
-})
+})*/
+
+let today = new Date(); //refer to https://phoenixnap.com/kb/how-to-get-the-current-date-and-time-javascript
+let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate()+ ' ' + today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+postItem = {
+	content: textInput.value,
+	date: date
+}
+
+postBtn.onclick = function(){
+	fetch('',{
+		method: 'POST',
+		headers:{
+	    'Content-Type': 'application/json',
+	  	},
+	  	body: JSON.stringify(postItem)
+	})
+	.then(response => response.json())
+	.then(postItem => {
+		console.log('Success:', data);
+	})
+	.catch((error) => {
+		console.log('Error:', error);
+	})
+}
