@@ -39,7 +39,7 @@ postItem = {
 }
 
 postBtn.onclick = function(){
-	fetch('',{
+	fetch('https://www.cindyli.top/',{
 		method: 'POST',
 		headers:{
 	    'Content-Type': 'application/json',
