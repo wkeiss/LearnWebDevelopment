@@ -28,21 +28,12 @@
 		
 		
 		<section id="post">
-			<div class="item">
-				<p class="content">shi nihdei hfeohoe hote
-				<br> 你好哇！</p>
-				<ul class="content-attachment">
-					<li><i class="fal fa-retweet"></i></li>
-					<li>time</li>
-				</ul>
-			</div>
-			<div class="item">
-				<p class="content">shin ihdeihfeohoehote</p>
-				<ul>
-					<li class="repost">repost</li>
-					<li>time</li>
-				</ul>
-			</div>
+			{% for post in posts %}
+				<div class="item">
+					<pre class="content">{{post.body}}</pre>
+					<pre class="date">{{post.pub_date}}</pre>
+				</div>
+			{% endfor %}
 		</section>
 	</div>
 	<footer><a href="#textarea"><i class="fa fa-arrow-up"></i></a></footer>
