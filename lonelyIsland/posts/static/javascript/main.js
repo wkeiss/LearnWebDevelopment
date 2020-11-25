@@ -1,4 +1,4 @@
-let textInput = document.querySelector("textarea#input");
+let textInput = document.querySelector("textarea#id_body");
 let textInputHeight;
 
 textInput.addEventListener("keydown", function (e) {
@@ -10,7 +10,7 @@ textInput.addEventListener("keydown", function (e) {
 	textInput.style.height = textInputHeight + "px";		
 })
 
-
+/*
 let postBtn = document.querySelector("#postBtn");
 postBtn.addEventListener("click", function(){
 	content = textInput.value;
@@ -37,12 +37,14 @@ postItem = {
 	content: textInput.value,
 	date: date
 }
-/*
-postBtn.onclick = function(){
-	fetch('https://www.cindyli.top/',{
+*/
+postBtn.onclick = function(event){
+	event.preventDefault()
+	/*
+	fetch('{% url 'post' %}',{
 		method: 'POST',
 		headers:{
-	    'Content-Type': 'application/json',
+	    'Content-Type': 'post/json',
 	  	},
 	  	body: JSON.stringify(postItem)
 	})
@@ -53,4 +55,5 @@ postBtn.onclick = function(){
 	.catch((error) => {
 		console.log('Error:', error);
 	})
-}*/
+	*/
+}

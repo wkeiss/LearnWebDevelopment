@@ -21,10 +21,12 @@
 
 	<div id="main">
 
-		<section id="textarea">
-			<textarea id="input" required></textarea>
-			<button type="submit" id="postBtn">Submit</button>
-		</section>
+		<form id="textarea" action="{% url 'post' %}" method="post">
+		 	{% csrf_token %}
+		 	{{ post_form.as_p }}
+			<!--textarea id="input" name="input" required></textarea-->
+			<input type="submit" value="Submit" id="postBtn">
+		</form>
 		
 		
 		<section id="post">
