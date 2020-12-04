@@ -164,7 +164,7 @@ header{
     left: 0;  
 }
 
-.item img:hover + div.overlay{
+div.overlay{
 	display: flex;
 
 }

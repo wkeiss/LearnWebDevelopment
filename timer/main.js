@@ -21,8 +21,8 @@ function changeOccupy(){
 	}
 }
 
-//setInterval(changeOccupy, 2000);
-/*
+setInterval(changeOccupy, 2000);
+
 // add mouseover & mouseout event listeners to latestwork items
 let latestworkContainer = document.querySelector("#latestwork .container");
 let overlayStyle = document.querySelector(".item div.overlay").style;
@@ -40,7 +40,7 @@ latestworkContainer.addEventListener("mouseout", function(e){
 		e.target.style.display = "none";
 	}
 })
-*/
+
 
 //add motal images effect to all demo <a> tag
 let demoLinks = document.querySelectorAll(".imgLink");

@@ -20,7 +20,7 @@ After finished the the [HTML](https://en.wikiversity.org/wiki/Web_Design/HTML_Ch
 
 For CSS layout,  the Tutorial give enough details to let you understand the CSS properties, like position, display. For Javascript, I knew I need to more familiar with the grammar, I was going to use FreeCodeCamp to learn Javascript, but I finally gave up, since it divides the knowledge to very small isolated pionts, I don't know why do I need to learn them, which made me lost interests soon. But MDN Javscript Turial is under the Web Development Context, it will give you the examples on Web Development to explain the knowledge, it more fun and easier to learn. So I strongly recommend the  [MDN Learn Webdevelopment Tutorial](https://developer.mozilla.org/en-US/docs/Learn)! My MDN learning codes are all in [the file named mdn](/mdn).
 
-Sometimes you maybe will be confused when you learn new technologies or terms,  even after you have read the MDN posts.  You can search the new terms and see different people how to explain them,  which will help you.  From my experience, the [W3Schools Online Web Tutorials](https://www.w3schools.com/) is a good resource, since it always can use short and clean sentences to explain the terms or technologies.
+Sometimes you maybe will be confused some concepts,  even after you have read the MDN posts.  You can search the new terms and see different people how to explain them,  which will be helpful for your understanding. Many times when I felt confused, the [W3Schools Online Web Tutorials](https://www.w3schools.com/) make me clear, since it explains the concepts using few short simple sentences.
 
 ## Next >> Projects
 
