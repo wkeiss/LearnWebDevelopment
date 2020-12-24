@@ -24,9 +24,13 @@ Sometimes you maybe will be confused some concepts,  even after you have read th
 
 ## Next >> Projects
 
-It's neccessary to build at least one website when you learning web development. I wrote a single page all by my hands except the design. I used [this open source design](https://themewagon.com/themes/timer-free-responsive-multi-page-personal-bootstrap-template/). You can see my codes of my first site `timer` in [the file named timer](/timer). And I also wrote [a note to record this first exprience of building a website](https://www.cindyli.top/What-I-learned-from-Building-My-First-Website/).
+It's neccessary to build at least one website when you learning web development. I wrote a single page all by my hands based on an open website design. I used [this open source design](https://themewagon.com/themes/timer-free-responsive-multi-page-personal-bootstrap-template/). You can see my codes of my first site `timer` in [the file named timer](/timer). And I also wrote [a note to record this first exprience of building a website](https://www.cindyli.top/What-I-learned-from-Building-My-First-Website/).
 
 After finished the CSS layout and Javascript Tutorial, I was interested in wrote a web applicaiton can post small thoughts. So I learnt django and build a project `lonely Island`. The Lonely Island project is in [this respository](https://github.com/wkeiss/lonelyisland).
+
+## Next >> Learning React
+
+When you're browser Front-End job description, you will see some of them will need you know some Front-End framework like Vue, or library like React. I choose React to learn firstly because of some positions I am interested in require in React. And I met a challenge which is good for pratice building a dynamic layout with React. Through this my first React app, I know the basic of how to apply React, how the React JSX is. Here is [my first react app code](/1st_React-App).  
 
 
 ## Contributing guidelines
@@ -50,6 +54,7 @@ After finished the CSS layout and Javascript Tutorial, I was interested in wrote
 - [CSS: fonts](https://www.w3.org/Style/Examples/007/fonts)
 
 ## Changelog:
+2020-12-24: Add `Next >> Learning React` Part
 
 2020-11-28:  Add Cotinue and Next Part
 
