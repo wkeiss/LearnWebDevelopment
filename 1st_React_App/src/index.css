@@ -1,0 +1,396 @@
+html{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	box-sizing: border-box;
+	padding:1.5em 3em;
+	margin: 0;
+}
+
+/* Style SearchBar Component */
+
+div.searchBar{
+	border: 2px solid #F2F1F1;
+	display: flex;
+	padding: 0;
+	margin: 0;
+	justify-content: center; /* Make the child items of div.searchBar horizontally center*/
+	align-items: center; /* Make the child items of div.searchBar vertically center*/
+	width: 320px;
+	height: 44px;
+	border-radius: 6px;
+}
+
+div.searchBar img{
+	width: 36px;
+	height: 24px;
+	margin: 0;
+}
+
+div.input{
+	border: none;
+	height: 40px;
+	width: 260px;
+	font-size: 16px;
+}
+
+input{
+	border: none;
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+}
+
+input:focus{
+	outline: none;
+}
+
+i.calendar{
+	padding-left: 10px;
+	padding-right: 4px;
+}
+
+div.searchIcon{
+	display: inline-block;
+	height: 44px;
+	width: 68px;
+	text-align: center;
+	background-color: #F2F1F1;
+}
+
+img#search{
+	margin-top: 8px;
+}
+
+/* Style SearchResult Component */
+div.resultContainer{
+	margin-top: 30px;
+}
+
+p.resultCount{
+	font-size: 18px;
+	color: #616060;
+	font-weight: bold;
+}
+
+div.resultShowContainer{
+	border-top: 1px solid #dbdbdb;
+	width: 100%;
+}
+
+div.logoImgWrapper{
+	width: 143px;
+	height: 150px;
+	margin: 10em auto; /* make logo image horizontally center */
+}
+
+img#logo{
+	width: 100%;
+	height: 100%;
+}
+
+/* Style Result Table */
+
+table{
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse; /* make every table cell connect to each other, */
+	table-layout: fixed;
+}
+
+th, td{
+	padding-left: 0;
+	border-bottom: 1px solid #dbdbdb;
+	height: 45px;
+	font-size: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+thead th:nth-child(1), tbody td:nth-child(1){
+	box-sizing: border-box;
+	padding-left: 20px;
+	padding-right: 35px;
+	width: 10%;
+}
+
+tbody td:nth-child(4){
+	padding-right: 35px;
+}
+
+th{
+	background-color: #F2F1F1;
+	font-size: 16px;
+}
+
+div.upArrowIcon{
+	display: inline-block;
+	margin-left: 10px;
+	width: 12px;
+	height: 12px;
+}
+
+th.from{
+	width: 10%;
+}
+
+th.to{
+	width: 10%;
+}
+
+td a{
+	text-decoration: none;
+	color: #000;
+}
+
+th.subject{
+	width: 15%;
+}
+
+th.body{
+	width: 10%;
+}
+
+th.date{
+	width: 5%;
+}
+
+/* Style Unread Message Column */
+th.unReadMsg{
+	width: 3%;
+}
+
+div.unReadMsgCount{
+	background-color: #9c9898;
+	width: 26px;
+	height: 18px;
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	margin: 0 auto;
+}
+
+/* Style Unread Attachment Icon Column */
+
+th.attachment{
+	width: 2%;
+}
+
+div.attachmentIconWrap{
+	width: 18px;
+	height: 15px;
+	margin: 0 auto;
+}
+
+td.date{
+	font-weight: bold;
+	font-size: 18px;
+}
+
+
+/* Style Table Row Focus Effect */
+
+tbody tr:hover td:not(:last-child), tbody tr:hover td a{
+/* Select a table row except the last table cell"date", 
+and select table mail link when hover on the table row*/
+	color: #2664eb;
+}
+
+tbody tr:hover{
+	background-color: #f5f5f5;
+	cursor: pointer;
+}
+
+tbody tr:hover .attachmentIcon path{ /*select the attachment icon path to change its fill color */
+	fill: #2664eb;
+}
+
+/* Mobile Responsive Design */
+@media only screen and (max-width: 780px){ 
+
+	body{
+		padding: 0;
+	}
+
+	div.searchBar{
+		margin-left: 20px;
+		margin-top: 35px;
+	}
+
+	.react-datepicker__month-container {
+    	margin: 0 auto;
+    	float: none;
+	}
+
+	table{
+		width: 100%;
+		table-layout: fixed;
+		border-spacing: 0;
+		padding: 0;
+		margin: 0;
+	}
+
+	th, td{
+		font-size: 17px;
+	}
+
+	th{
+		display: flex;
+		align-items: center;
+	}
+
+	th div:first-child{
+		padding-right: 4px;
+	}
+
+	th div:not(:first-child){
+		padding-left: 8px;
+		padding-right: 8px;
+		height: 17px;
+		border-left: 2px solid #666;
+		text-align: center;
+		color: #666;
+	}
+
+	td{
+		position: relative;
+		margin: 0;
+	    padding: 0;
+	}
+
+	p{
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+
+	p.mailTo{
+		margin: 2px 0;
+		position: relative;
+		top: 3px;	
+	}
+
+	p.resultCount{
+		padding-left: 20px;
+	}
+
+	p.mailFrom{
+		margin: 0;
+		position: relative;
+		bottom: 3px;
+	}
+
+	p.subject{
+		font-size: 18px;
+		margin-top: 4px;
+		margin-bottom: 8px;
+	}
+
+	p.body{
+		color: #666666;
+		margin-top: 4px;
+		padding-top: 0;
+	}
+
+	div.attachmentIconWrap{
+		display: inline-block;
+		padding-right: 6px;
+	}
+
+	td div.rightArrowIcon{
+		display: inline-block;
+		width: 7px;
+		height: 7px;
+		padding-left: 12px;
+	}
+
+	div.tdLeft{
+		width: 85%;
+		margin-top: 12px;
+		margin-right: 10px;
+		padding-right:  7px;
+	}
+
+	div.mailIcon{
+		position: relative;
+		bottom: 4px;
+		width: 16px;
+		height: 10px;
+		display: inline-block;
+	}
+
+	div.mails{
+		display: inline-block;
+		padding-left:  5px;
+		width: 78%;
+		margin-top: 0;
+		padding-top: 0;
+	}
+
+	div.tdRight{
+		position: absolute;
+		right: 1.5em;
+		top: 10px;
+	}
+
+	div.unReadMsgCount{
+		position: absolute;
+		right: 2em;
+		top: 42px;
+	}
+}
+
+@media only screen and (max-width: 320px){
+	body{
+		padding: 0;
+	}
+
+	div.searchBar{
+		width: 70%;
+	}
+
+	div.tdRight{
+		position: absolute;
+		right: 1em;
+		top: 10px;
+	}
+
+	span.date{
+		padding-right: 0;
+	}
+
+	div.rightArrowIcon{
+		padding-left: 3px;
+	}
+
+	div.tdLeft{
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 280px){
+	span.date{
+		font-size: 12px;
+	}
+
+	div.searchBar{
+		width: 70%;
+		margin-left: 4px;
+	}
+
+	div.tdRight{
+		position: absolute;
+		right: 16px;
+		top: 10px;
+	}
+
+	div.attachmentIconWrap{
+		padding-right: 3px;
+	}
+
+}
