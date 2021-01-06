@@ -54,6 +54,7 @@ When you're browser Front-End job description, you will see some of them will ne
 - [CSS: fonts](https://www.w3.org/Style/Examples/007/fonts)
 
 ## Changelog:
+
 2020-12-24: Add `Next >> Learning React` Part
 
 2020-11-28:  Add Cotinue and Next Part

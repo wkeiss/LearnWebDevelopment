@@ -18,8 +18,8 @@ const SearchBar = () => {
 		</div>
 	);
 
-	const [startDate, setStartDate] = useState(null);
-	const [endDate, setEndDate] = useState(null);
+	const [startDate, setStartDate] = useState(moment('2019/12/31'));
+	const [endDate, setEndDate] = useState(moment('2020/1/3'));
 	const onChange = (dates) => {
 		const [start, end] = dates;
 		setStartDate(start);

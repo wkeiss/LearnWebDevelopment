@@ -4,11 +4,6 @@ body{
 	margin: 0
 }
 
-#wrap{
-	margin: 0 auto;
-    width: 70%;
-}
-
 #header{
 	grid-area: header;
 	background-color: #BDB76B;
@@ -26,6 +21,10 @@ body{
 	background-color: #BDB76B;
 }
 
+#sidebar div.wrap{
+	margin-left: 12px;
+}
+
 #content{
 	grid-area: content;
 	background-color: #8FBC8F;
@@ -41,9 +40,11 @@ body{
 	grid-area: footer;
 }
 
-#wrap{
+#main{
+	margin: 0 auto;
+    width: 70%;
 	display: grid;
-	grid-template-columns: 1fr 2fr;
+	grid-template-columns: 4fr 1fr;
 	grid-template-areas: 
 		"header header"
 		"nav nav"
